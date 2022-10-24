@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/store/index",
+    "pages/order/index",
+    "pages/me/index",
+    "pages/web-view/index",
+    "pages/login/index"
+  ],
+  "tabBar": {
+    "custom": true,
+    "list": [{
+      "pagePath": "pages/index/index"
+    },{
+      "pagePath": "pages/store/index"
+    },
+    {
+      "pagePath": "pages/order/index"
+    },
+    {
+      "pagePath": "pages/me/index"
+    }]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "蜜雪",
+    "navigationBarTextStyle": "black",
+    "navigationStyle":"custom"
+  },
+
+  "sitemapLocation": "sitemap.json"
+}
