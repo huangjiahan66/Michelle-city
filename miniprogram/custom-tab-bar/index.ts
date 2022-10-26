@@ -1,8 +1,11 @@
 // custom-tab-bar/index.ts
+import { storeBehavior } from '../behavior/storeBehavior';
 import {ErrorMessage} from '../enums/ErrorMessage'
+import { appStore } from '../store/index';
 Component({
+  behaviors:[storeBehavior],
   data: {
-    active: 0,
+
     list: [
       {
         text: '首页',
@@ -40,10 +43,12 @@ Component({
       this.setData({
         active: event.detail
       })
+      appStore.switchTab(event.detail)
 			wx.switchTab({
 				url: this.data.list[event.detail].path
       });
      },
+    //  todo 优化
      init() {
        const currentPage = getCurrentPages().pop()
        if(!currentPage) {

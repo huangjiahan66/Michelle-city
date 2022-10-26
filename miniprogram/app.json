@@ -5,29 +5,33 @@
     "pages/order/index",
     "pages/me/index",
     "pages/web-view/index",
-    "pages/login/index"
+    "pages/login/index",
+    "pages/me/settings"
+ 
   ],
   "tabBar": {
     "custom": true,
-    "list": [{
-      "pagePath": "pages/index/index"
-    },{
-      "pagePath": "pages/store/index"
-    },
-    {
-      "pagePath": "pages/order/index"
-    },
-    {
-      "pagePath": "pages/me/index"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index"
+      },
+      {
+        "pagePath": "pages/store/index"
+      },
+      {
+        "pagePath": "pages/order/index"
+      },
+      {
+        "pagePath": "pages/me/index"
+      }
+    ]
   },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "蜜雪",
     "navigationBarTextStyle": "black",
-    "navigationStyle":"custom"
+    "navigationStyle": "custom"
   },
-
   "sitemapLocation": "sitemap.json"
 }

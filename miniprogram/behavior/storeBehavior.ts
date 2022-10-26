@@ -5,7 +5,7 @@ export const storeBehavior=BehaviorWithStore({
   storeBindings:[{
     namespace:'app',
     store:appStore,
-    fields:['token'],//开放的属性
-    actions:['login']
+    fields:['token','currentUser','activeTabbar'],//开放的属性
+    actions:['login','logout','switchTab']  
   }]
 })

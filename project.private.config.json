@@ -22,6 +22,20 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "个人修改页面",
+          "pathName": "pages/me/settings",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "点餐页面",
+          "pathName": "pages/store/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
