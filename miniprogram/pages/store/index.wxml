@@ -1,1 +1,35 @@
-<view>111</view>
+<view class="page">
+  <view class="header-section">
+    <van-tabs active="{{ active }}" bind:change="onChange">
+      <van-tab title="附近门店"></van-tab>
+      <van-tab title="常去门店"></van-tab>
+    </van-tabs>
+    <van-search custom-class="search" value="{{ value }}" placeholder="搜索门店" shape="round"/>
+  </view>
+  <view class="map-section">
+    <map class="map"></map>
+    <view class="toggle-map">收起地图
+      <van-icon style="margin-left: 10rpx;" name="arrow-up" />
+    </view>
+  </view>
+  <view class="store-list-section">
+ 
+    <view  class="store-card" wx:for="{{storeList}}" wx:key="unique">
+        <view class="store-card__meta">
+          <view class="name">{{item.name}}</view>
+          <view class="address">{{item.address}}</view>
+          <view class="opening-time">营业时间:{{item.openingTime.start}} ~ {{item.openingTime.end}} </view>
+          <van-tag type="primary">{{storeStatusDict[item.status]}}</van-tag>
+        </view>
+        <view class="store-card__actions">
+          <view class="distance">
+            距离2.7km
+          </view>
+          <view class="aciton-icon-list">
+              <van-icon custom-class="item" name="location"  />
+              <van-icon custom-class="item" name="phone" />
+          </view>
+        </view>
+    </view>
+  </view>
+</view>
