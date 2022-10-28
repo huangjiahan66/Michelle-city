@@ -1,4 +1,5 @@
 import request from "./request"
+import { UserType, UserUpdateRequest } from "./types"
 
 // 当前用户接口
 const current=()=>{

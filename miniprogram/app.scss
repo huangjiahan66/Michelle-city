@@ -31,4 +31,9 @@ page {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: calc(var(--tabbar-height) + env(safe-area-inset-bottom));
+ 
+}
+.loading{
+  width: 100%;
 }

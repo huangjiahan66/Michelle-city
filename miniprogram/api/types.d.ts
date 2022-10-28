@@ -19,12 +19,14 @@ type UserType={
   gender?:Gender
   birthDay?:string
 }
+
 type Gender="MALE" | 'FAMALE' | 'UNKNOWN' | null
 type UserUpdateRequest={
   mobile?:number,
   gender?:Gender
   birthDay?:string
 }
+
 // 门店数据类型
 type ListResult<T> = {
   paging: Paging,
@@ -50,6 +52,6 @@ type Store={
 }
 
 type Location = {
-  longtitude: number;
-  langtitude: number;
+  latitude: number;
+  longitude: number;
 }
